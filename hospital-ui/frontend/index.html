@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hospital Information Assistant</title>
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="brand" href="/" aria-label="Hospital assistant home"><span class="mark">+</span><span>Evergreen<span class="brand-sub">COMMUNITY MEDICAL CENTER</span></span></a>
+    <span class="demo-tag">FICTIONAL HOSPITAL · LEARNING DEMO</span>
+    <div class="side-section"><span class="eyebrow">YOUR WORKSPACE</span><div class="active-nav"><span aria-hidden="true">◌</span> Information assistant</div></div>
+    <button id="new-chat" class="new-button" type="button">＋ New Conversation</button>
+    <div class="side-note"><span class="eyebrow">A LITTLE CONTEXT</span><p>Ask about departments, visiting hours, and appointment instructions.</p><p>Follow-up questions work within this conversation.</p></div>
+    <a class="guide-link" href="/guide/" target="_blank" rel="noopener">How the assistant works <span aria-hidden="true">↗</span></a>
+    <div class="side-footer"><span class="status-dot"></span> Local learning workspace<p>Conversation memory clears when the server restarts.</p></div>
+  </aside>
+  <main>
+    <header><div><span class="eyebrow">HOSPITAL GUIDE</span><h1>Hospital Information Assistant</h1></div><span class="private-label">Local demo</span></header>
+    <div id="connection" class="connection" role="status">Connecting to your local backend…</div>
+    <section class="chat-area" aria-label="Conversation">
+      <div id="welcome" class="welcome">
+        <div class="welcome-icon" aria-hidden="true">✳</div>
+        <span class="eyebrow">A HELPFUL PLACE TO START</span>
+        <h2>Hospital information,<br><em>one question at a time.</em></h2>
+        <p>Find your way through our fictional hospital.<br>Answers come with references you can check.</p>
+        <div class="examples" aria-label="Example questions">
+          <button type="button" data-question="Where is the cardiology department?"><span class="card-label">FIND A DEPARTMENT <span>↗</span></span>Where is the cardiology department?</button>
+          <button type="button" data-question="What are dermatology’s Saturday hours?"><span class="card-label">CHECK CLINIC HOURS <span>↗</span></span>What are dermatology’s Saturday hours?</button>
+          <button type="button" data-question="How do I request an appointment?"><span class="card-label">PLAN A VISIT <span>↗</span></span>How do I request an appointment?</button>
+        </div>
+        <p class="reference-hint">Grounded in your hospital document · References below each answer</p>
+      </div>
+      <div id="messages" role="log" aria-live="polite" aria-relevant="additions" aria-label="Chat messages"></div>
+    </section>
+    <div class="composer-wrap">
+      <div id="error" class="error" role="alert" hidden><span id="error-text"></span><button id="retry" type="button">Retry</button></div>
+      <form id="chat-form" class="composer">
+        <label for="question">Your question</label>
+        <textarea id="question" rows="2" maxlength="2000" placeholder="Ask about a department, hours, or hospital services…" required></textarea>
+        <div class="composer-bottom"><span>Enter to send <span class="separator">·</span> Shift + Enter for a new line</span><button id="send" type="submit">Send <span aria-hidden="true">↑</span></button></div>
+      </form>
+      <p class="disclaimer">Fictional hospital demo. No medical advice, live availability, or appointment booking.</p>
+    </div>
+  </main>
+</body>
+</html>

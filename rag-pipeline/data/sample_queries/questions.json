@@ -1,0 +1,183 @@
+[
+  {
+    "id": "cardiology_location",
+    "question": "Where is the cardiology department?",
+    "expected_search": true,
+    "expected_behavior": "Give the documented location with a supporting citation.",
+    "expected_facts": ["East Tower", "3rd Floor"],
+    "must_not_claim": []
+  },
+  {
+    "id": "cardiology_price",
+    "question": "How much does a new cardiology consultation cost?",
+    "expected_search": true,
+    "expected_behavior": "Give the documented self-pay estimate with a supporting citation.",
+    "expected_facts": ["$250", "self-pay estimate"],
+    "must_not_claim": [
+      "The price is guaranteed for every patient."
+    ]
+  },
+  {
+    "id": "dermatology_hours",
+    "question": "What are the dermatology clinic hours on Saturday?",
+    "expected_search": true,
+    "expected_behavior": "Give the documented Saturday hours with a supporting citation.",
+    "expected_facts": ["9:00 AM", "1:00 PM"],
+    "must_not_claim": []
+  },
+  {
+    "id": "unknown_doctor",
+    "question": "What is Dr. Smith's phone number?",
+    "expected_search": true,
+    "expected_behavior": "Explain that Dr. Smith's number was not found. A documented general contact may be offered if clearly identified and cited.",
+    "expected_facts": [],
+    "must_not_claim": [
+      "A retrieved phone number belongs to Dr. Smith."
+    ]
+  },
+  {
+    "id": "eye_injury_doctor",
+    "steps": [
+      {
+        "id": "eye_injury_routing",
+        "question": "My friend had an eye accident. Which department should we contact?",
+        "expected_search": true,
+        "expected_behavior": "Give the documented severity-dependent routing, Ophthalmology contact, and emergency location with citations without diagnosing the patient.",
+        "expected_facts": ["Ophthalmology", "(555) 010-2500", "Emergency Department"],
+        "must_not_claim": [
+          "The hospital is geographically near the user.",
+          "A diagnosis for the eye injury."
+        ]
+      },
+      {
+        "id": "eye_doctor_follow_up",
+        "question": "What is the doctor's name?",
+        "expected_search": true,
+        "expected_behavior": "Understand that the user means the ophthalmologist whose documented focus includes eye-trauma follow-up and give that fictional clinician's name with a citation.",
+        "expected_facts": ["Dr. Elena Park"],
+        "must_not_claim": [
+          "A direct doctor phone number is documented."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "appointment_availability",
+    "question": "Is a dermatology appointment available on October 15 at 10 AM?",
+    "expected_search": true,
+    "expected_behavior": "Explain that live availability cannot be checked. Documented booking instructions may be provided with citations.",
+    "expected_facts": [],
+    "must_not_claim": [
+      "The requested slot is available.",
+      "An appointment has been booked."
+    ]
+  },
+  {
+    "id": "greeting",
+    "question": "Hello",
+    "expected_search": false,
+    "expected_behavior": "Respond briefly with a greeting without searching hospital documents.",
+    "expected_facts": [],
+    "must_not_claim": []
+  },
+  {
+    "id": "ambiguous_hours_fresh",
+    "question": "What are its Saturday hours?",
+    "expected_search": false,
+    "expected_behavior": "Ask which department or service the user means without searching or guessing.",
+    "expected_facts": [],
+    "must_not_claim": [
+      "A particular department has already been established."
+    ]
+  },
+  {
+    "id": "greeting_then_ambiguous_hours",
+    "steps": [
+      {
+        "id": "greet",
+        "question": "Hello",
+        "expected_search": false,
+        "expected_behavior": "Respond with a greeting without searching.",
+        "expected_facts": [],
+        "must_not_claim": []
+      },
+      {
+        "id": "ask_unnamed_hours",
+        "question": "What are its Saturday hours?",
+        "expected_search": false,
+        "expected_behavior": "Recognize that a greeting did not establish a department. Ask for clarification without searching.",
+        "expected_facts": [],
+        "must_not_claim": [
+          "A particular department has already been established."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "dermatology_memory_and_reset",
+    "steps": [
+      {
+        "id": "establish_department",
+        "question": "Where is the dermatology clinic?",
+        "expected_search": true,
+        "expected_behavior": "Give the documented dermatology location with a citation.",
+        "expected_facts": ["South Wing", "1st Floor"],
+        "must_not_claim": []
+      },
+      {
+        "id": "follow_up_hours",
+        "question": "What are its Saturday hours?",
+        "expected_search": true,
+        "expected_behavior": "Understand that 'its' refers to dermatology. Search and give its Saturday hours with a citation.",
+        "expected_facts": ["9:00 AM", "1:00 PM"],
+        "must_not_claim": [
+          "Hours for a different department."
+        ]
+      },
+      {
+        "id": "follow_up_booking",
+        "question": "How do I book an appointment there?",
+        "expected_search": true,
+        "expected_behavior": "Understand that 'there' refers to dermatology. Give documented booking instructions with supporting citations.",
+        "expected_facts": [],
+        "must_not_claim": [
+          "An appointment has been booked.",
+          "Live appointment availability has been checked."
+        ]
+      },
+      {
+        "id": "hours_after_reset",
+        "reset_before": true,
+        "question": "What are its Saturday hours?",
+        "expected_search": false,
+        "expected_behavior": "Ask which department the user means. Do not reuse dermatology from the previous conversation or search unnecessarily.",
+        "expected_facts": [],
+        "must_not_claim": [
+          "The user means dermatology based on the previous conversation."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "leg_pain_department",
+    "question": "Where can I find a leg pain doctor?",
+    "expected_behavior": "Ask which department the user intends, or present Orthopedics and Sports Medicine as a conditional option. Any hospital contact details must be retrieved and cited.",
+    "expected_facts": [],
+    "must_not_claim": [
+      "Orthopedics is definitely the correct specialist for this user's symptom.",
+      "A diagnosis or treatment recommendation."
+    ]
+  },
+  {
+    "id": "orthopedics_online",
+    "question": "Can I consult orthopedics online?",
+    "expected_search": true,
+    "expected_behavior": "Distinguish online appointment booking from a video consultation. If retrieved information does not establish orthopedics telehealth availability, say it is not confirmed. Offer documented contact information with citations.",
+    "expected_facts": [],
+    "must_not_claim": [
+      "Portal booking proves a video consultation is available.",
+      "Orthopedics definitely offers video consultations without supporting evidence.",
+      "Orthopedics definitely does not offer video consultations merely because it is absent from a list."
+    ]
+  }
+]

@@ -1,0 +1,892 @@
+{
+  "started_at": "2026-10-12T05:12:16.124078+00:00",
+  "mode": "real_ui_api",
+  "results": [
+    {
+      "case_id": "cardiology_location",
+      "step_id": "cardiology_location",
+      "question": "Where is the cardiology department?",
+      "status_code": 200,
+      "expected_search": true,
+      "expected_behavior": "Give the documented location with a supporting citation.",
+      "expected_facts": [
+        "East Tower",
+        "3rd Floor"
+      ],
+      "must_not_claim": [],
+      "response": {
+        "answer": "The cardiology department, called the Evergreen Heart & Vascular Institute, is in the East Tower on the 3rd floor. [5]",
+        "sources": [
+          {
+            "label": 1,
+            "filename": "hospital_info.txt",
+            "section": "6. Other Departments and Specialties",
+            "subsection": "",
+            "cited": false
+          },
+          {
+            "label": 2,
+            "filename": "hospital_info.txt",
+            "section": "3. Cardiology (Heart Care)",
+            "subsection": "3.3 Diagnostic Services",
+            "cited": false
+          },
+          {
+            "label": 3,
+            "filename": "hospital_info.txt",
+            "section": "3. Cardiology (Heart Care)",
+            "subsection": "3.4 Treatments and Procedures",
+            "cited": false
+          },
+          {
+            "label": 4,
+            "filename": "hospital_info.txt",
+            "section": "3. Cardiology (Heart Care)",
+            "subsection": "3.5 Cardiologists (Fictional)",
+            "cited": false
+          },
+          {
+            "label": 5,
+            "filename": "hospital_info.txt",
+            "section": "3. Cardiology (Heart Care)",
+            "subsection": "3.1 Overview",
+            "cited": true
+          },
+          {
+            "label": 6,
+            "filename": "hospital_info.txt",
+            "section": "3. Cardiology (Heart Care)",
+            "subsection": "3.2 Conditions Treated",
+            "cited": false
+          }
+        ],
+        "search_used": true,
+        "elapsed_seconds": 7.11,
+        "conversation_id": "c6880d89-bb7d-4163-a599-656cbc2248d7"
+      },
+      "citation_labels_resolve": true,
+      "routing_match": true
+    },
+    {
+      "case_id": "cardiology_price",
+      "step_id": "cardiology_price",
+      "question": "How much does a new cardiology consultation cost?",
+      "status_code": 200,
+      "expected_search": true,
+      "expected_behavior": "Give the documented self-pay estimate with a supporting citation.",
+      "expected_facts": [
+        "$250",
+        "self-pay estimate"
+      ],
+      "must_not_claim": [
+        "The price is guaranteed for every patient."
+      ],
+      "response": {
+        "answer": "A new cardiology consultation costs **$250** (self-pay estimate). [1]",
+        "sources": [
+          {
+            "label": 1,
+            "filename": "hospital_info.txt",
+            "section": "3. Cardiology (Heart Care)",
+            "subsection": "3.6 Pricing (Self-Pay Estimates)",
+            "cited": true
+          },
+          {
+            "label": 2,
+            "filename": "hospital_info.txt",
+            "section": "3. Cardiology (Heart Care)",
+            "subsection": "3.7 Preparing for a Cardiology Visit",
+            "cited": false
+          },
+          {
+            "label": 3,
+            "filename": "hospital_info.txt",
+            "section": "3. Cardiology (Heart Care)",
+            "subsection": "3.3 Diagnostic Services",
+            "cited": false
+          },
+          {
+            "label": 4,
+            "filename": "hospital_info.txt",
+            "section": "5. Dermatology (Skin Care)",
+            "subsection": "5.6 Pricing (Self-Pay Estimates)",
+            "cited": false
+          },
+          {
+            "label": 5,
+            "filename": "hospital_info.txt",
+            "section": "3. Cardiology (Heart Care)",
+            "subsection": "3.1 Overview",
+            "cited": false
+          },
+          {
+            "label": 6,
+            "filename": "hospital_info.txt",
+            "section": "7. Appointments",
+            "subsection": "",
+            "cited": false
+          }
+        ],
+        "search_used": true,
+        "elapsed_seconds": 3.28,
+        "conversation_id": "2ff84810-06e8-4144-96ae-c430b276efe2"
+      },
+      "citation_labels_resolve": true,
+      "routing_match": true
+    },
+    {
+      "case_id": "dermatology_hours",
+      "step_id": "dermatology_hours",
+      "question": "What are the dermatology clinic hours on Saturday?",
+      "status_code": 200,
+      "expected_search": true,
+      "expected_behavior": "Give the documented Saturday hours with a supporting citation.",
+      "expected_facts": [
+        "9:00 AM",
+        "1:00 PM"
+      ],
+      "must_not_claim": [],
+      "response": {
+        "answer": "The dermatology clinic is open Saturdays from 9:00 AM to 1:00 PM. [1]",
+        "sources": [
+          {
+            "label": 1,
+            "filename": "hospital_info.txt",
+            "section": "5. Dermatology (Skin Care)",
+            "subsection": "5.1 Overview",
+            "cited": true
+          },
+          {
+            "label": 2,
+            "filename": "hospital_info.txt",
+            "section": "7. Appointments",
+            "subsection": "",
+            "cited": false
+          },
+          {
+            "label": 3,
+            "filename": "hospital_info.txt",
+            "section": "5. Dermatology (Skin Care)",
+            "subsection": "5.4 Cosmetic Dermatology",
+            "cited": false
+          },
+          {
+            "label": 4,
+            "filename": "hospital_info.txt",
+            "section": "5. Dermatology (Skin Care)",
+            "subsection": "5.2 Medical Dermatology Conditions",
+            "cited": false
+          },
+          {
+            "label": 5,
+            "filename": "hospital_info.txt",
+            "section": "5. Dermatology (Skin Care)",
+            "subsection": "5.3 Skin Cancer Services",
+            "cited": false
+          },
+          {
+            "label": 6,
+            "filename": "hospital_info.txt",
+            "section": "10. Frequently Asked Questions",
+            "subsection": "",
+            "cited": false
+          }
+        ],
+        "search_used": true,
+        "elapsed_seconds": 4.76,
+        "conversation_id": "e8be6ea1-4411-4ca6-97b4-a2c1c99ae053"
+      },
+      "citation_labels_resolve": true,
+      "routing_match": true
+    },
+    {
+      "case_id": "unknown_doctor",
+      "step_id": "unknown_doctor",
+      "question": "What is Dr. Smith's phone number?",
+      "status_code": 200,
+      "expected_search": true,
+      "expected_behavior": "Explain that Dr. Smith's number was not found. A documented general contact may be offered if clearly identified and cited.",
+      "expected_facts": [],
+      "must_not_claim": [
+        "A retrieved phone number belongs to Dr. Smith."
+      ],
+      "response": {
+        "answer": "I couldn’t find Dr. Smith’s direct phone number in the hospital documents. For appointments, call (555) 010-1010, Monday–Friday, 7:30 AM–6:00 PM. [1]",
+        "sources": [
+          {
+            "label": 1,
+            "filename": "hospital_info.txt",
+            "section": "7. Appointments",
+            "subsection": "",
+            "cited": true
+          },
+          {
+            "label": 2,
+            "filename": "hospital_info.txt",
+            "section": "6. Other Departments and Specialties",
+            "subsection": "",
+            "cited": false
+          },
+          {
+            "label": 3,
+            "filename": "hospital_info.txt",
+            "section": "5. Dermatology (Skin Care)",
+            "subsection": "5.1 Overview",
+            "cited": false
+          },
+          {
+            "label": 4,
+            "filename": "hospital_info.txt",
+            "section": "3. Cardiology (Heart Care)",
+            "subsection": "3.5 Cardiologists (Fictional)",
+            "cited": false
+          },
+          {
+            "label": 5,
+            "filename": "hospital_info.txt",
+            "section": "8. Insurance and Billing",
+            "subsection": "8.2 Billing Information",
+            "cited": false
+          },
+          {
+            "label": 6,
+            "filename": "hospital_info.txt",
+            "section": "4. Chiropractic Care",
+            "subsection": "4.4 Chiropractors (Fictional)",
+            "cited": false
+          }
+        ],
+        "search_used": true,
+        "elapsed_seconds": 2.73,
+        "conversation_id": "667474af-91e9-45d1-b574-24d1acbfc100"
+      },
+      "citation_labels_resolve": true,
+      "routing_match": true
+    },
+    {
+      "case_id": "appointment_availability",
+      "step_id": "appointment_availability",
+      "question": "Is a dermatology appointment available on October 15 at 10 AM?",
+      "status_code": 200,
+      "expected_search": true,
+      "expected_behavior": "Explain that live availability cannot be checked. Documented booking instructions may be provided with citations.",
+      "expected_facts": [],
+      "must_not_claim": [
+        "The requested slot is available.",
+        "An appointment has been booked."
+      ],
+      "response": {
+        "answer": "I can’t check live appointment availability. The dermatology clinic is open weekdays from 8:00 AM to 6:00 PM, but you’ll need to confirm whether October 15 at 10:00 AM is available through the patient portal or by calling (555) 010-1010. [1][2]",
+        "sources": [
+          {
+            "label": 1,
+            "filename": "hospital_info.txt",
+            "section": "7. Appointments",
+            "subsection": "",
+            "cited": true
+          },
+          {
+            "label": 2,
+            "filename": "hospital_info.txt",
+            "section": "5. Dermatology (Skin Care)",
+            "subsection": "5.1 Overview",
+            "cited": true
+          },
+          {
+            "label": 3,
+            "filename": "hospital_info.txt",
+            "section": "5. Dermatology (Skin Care)",
+            "subsection": "5.3 Skin Cancer Services",
+            "cited": false
+          },
+          {
+            "label": 4,
+            "filename": "hospital_info.txt",
+            "section": "5. Dermatology (Skin Care)",
+            "subsection": "5.4 Cosmetic Dermatology",
+            "cited": false
+          },
+          {
+            "label": 5,
+            "filename": "hospital_info.txt",
+            "section": "5. Dermatology (Skin Care)",
+            "subsection": "5.2 Medical Dermatology Conditions",
+            "cited": false
+          },
+          {
+            "label": 6,
+            "filename": "hospital_info.txt",
+            "section": "5. Dermatology (Skin Care)",
+            "subsection": "5.6 Pricing (Self-Pay Estimates)",
+            "cited": false
+          }
+        ],
+        "search_used": true,
+        "elapsed_seconds": 3.55,
+        "conversation_id": "9f59cc88-b9ab-4735-9dfa-742fac9611e6"
+      },
+      "citation_labels_resolve": true,
+      "routing_match": true
+    },
+    {
+      "case_id": "greeting",
+      "step_id": "greeting",
+      "question": "Hello",
+      "status_code": 200,
+      "expected_search": false,
+      "expected_behavior": "Respond briefly with a greeting without searching hospital documents.",
+      "expected_facts": [],
+      "must_not_claim": [],
+      "response": {
+        "answer": "Hello! How can I help with hospital information?",
+        "sources": [],
+        "search_used": false,
+        "elapsed_seconds": 1.41,
+        "conversation_id": "00492fd8-9af0-4d70-9bb8-730186bca1d0"
+      },
+      "citation_labels_resolve": true,
+      "routing_match": true
+    },
+    {
+      "case_id": "ambiguous_hours_fresh",
+      "step_id": "ambiguous_hours_fresh",
+      "question": "What are its Saturday hours?",
+      "status_code": 200,
+      "expected_search": false,
+      "expected_behavior": "Ask which department or service the user means without searching or guessing.",
+      "expected_facts": [],
+      "must_not_claim": [
+        "A particular department has already been established."
+      ],
+      "response": {
+        "answer": "Which department or service do you mean? I don’t have any earlier context to identify “it.”",
+        "sources": [
+          {
+            "label": 1,
+            "filename": "hospital_info.txt",
+            "section": "1. Hospital Overview",
+            "subsection": "General Hours",
+            "cited": false
+          },
+          {
+            "label": 2,
+            "filename": "hospital_info.txt",
+            "section": "7. Appointments",
+            "subsection": "",
+            "cited": false
+          },
+          {
+            "label": 3,
+            "filename": "hospital_info.txt",
+            "section": "10. Frequently Asked Questions",
+            "subsection": "",
+            "cited": false
+          },
+          {
+            "label": 4,
+            "filename": "hospital_info.txt",
+            "section": "5. Dermatology (Skin Care)",
+            "subsection": "5.1 Overview",
+            "cited": false
+          },
+          {
+            "label": 5,
+            "filename": "hospital_info.txt",
+            "section": "6. Other Departments and Specialties",
+            "subsection": "",
+            "cited": false
+          },
+          {
+            "label": 6,
+            "filename": "hospital_info.txt",
+            "section": "4. Chiropractic Care",
+            "subsection": "4.1 Overview",
+            "cited": false
+          }
+        ],
+        "search_used": true,
+        "elapsed_seconds": 3.07,
+        "conversation_id": "6911e0d5-c060-4dce-8fd2-19fbff4b3ba1"
+      },
+      "citation_labels_resolve": true,
+      "routing_match": false
+    },
+    {
+      "case_id": "greeting_then_ambiguous_hours",
+      "step_id": "greet",
+      "question": "Hello",
+      "status_code": 200,
+      "expected_search": false,
+      "expected_behavior": "Respond with a greeting without searching.",
+      "expected_facts": [],
+      "must_not_claim": [],
+      "response": {
+        "answer": "Hello! How can I help you with hospital information?",
+        "sources": [],
+        "search_used": false,
+        "elapsed_seconds": 1.06,
+        "conversation_id": "7846bae9-73d6-4595-a6f2-627ed6ca0668"
+      },
+      "citation_labels_resolve": true,
+      "routing_match": true
+    },
+    {
+      "case_id": "greeting_then_ambiguous_hours",
+      "step_id": "ask_unnamed_hours",
+      "question": "What are its Saturday hours?",
+      "status_code": 200,
+      "expected_search": false,
+      "expected_behavior": "Recognize that a greeting did not establish a department. Ask for clarification without searching.",
+      "expected_facts": [],
+      "must_not_claim": [
+        "A particular department has already been established."
+      ],
+      "response": {
+        "answer": "Which department or service do you mean? Saturday hours vary—for example, Saturday clinics are 9:00 AM–1:00 PM, the pharmacy is 9:00 AM–5:00 PM, and the lab is 7:00 AM–7:00 PM. [1]",
+        "sources": [
+          {
+            "label": 1,
+            "filename": "hospital_info.txt",
+            "section": "1. Hospital Overview",
+            "subsection": "General Hours",
+            "cited": true
+          },
+          {
+            "label": 2,
+            "filename": "hospital_info.txt",
+            "section": "7. Appointments",
+            "subsection": "",
+            "cited": false
+          },
+          {
+            "label": 3,
+            "filename": "hospital_info.txt",
+            "section": "10. Frequently Asked Questions",
+            "subsection": "",
+            "cited": false
+          },
+          {
+            "label": 4,
+            "filename": "hospital_info.txt",
+            "section": "9. Patient and Visitor Information",
+            "subsection": "9.2 Parking and Transportation",
+            "cited": false
+          },
+          {
+            "label": 5,
+            "filename": "hospital_info.txt",
+            "section": "8. Insurance and Billing",
+            "subsection": "8.2 Billing Information",
+            "cited": false
+          },
+          {
+            "label": 6,
+            "filename": "hospital_info.txt",
+            "section": "6. Other Departments and Specialties",
+            "subsection": "",
+            "cited": false
+          }
+        ],
+        "search_used": true,
+        "elapsed_seconds": 3.29,
+        "conversation_id": "7846bae9-73d6-4595-a6f2-627ed6ca0668"
+      },
+      "citation_labels_resolve": true,
+      "routing_match": false
+    },
+    {
+      "case_id": "dermatology_memory_and_reset",
+      "step_id": "establish_department",
+      "question": "Where is the dermatology clinic?",
+      "status_code": 200,
+      "expected_search": true,
+      "expected_behavior": "Give the documented dermatology location with a citation.",
+      "expected_facts": [
+        "South Wing",
+        "1st Floor"
+      ],
+      "must_not_claim": [],
+      "response": {
+        "answer": "The dermatology clinic is in the **South Wing, 1st Floor**. [1]",
+        "sources": [
+          {
+            "label": 1,
+            "filename": "hospital_info.txt",
+            "section": "5. Dermatology (Skin Care)",
+            "subsection": "5.1 Overview",
+            "cited": true
+          },
+          {
+            "label": 2,
+            "filename": "hospital_info.txt",
+            "section": "5. Dermatology (Skin Care)",
+            "subsection": "5.4 Cosmetic Dermatology",
+            "cited": false
+          },
+          {
+            "label": 3,
+            "filename": "hospital_info.txt",
+            "section": "5. Dermatology (Skin Care)",
+            "subsection": "5.3 Skin Cancer Services",
+            "cited": false
+          },
+          {
+            "label": 4,
+            "filename": "hospital_info.txt",
+            "section": "5. Dermatology (Skin Care)",
+            "subsection": "5.2 Medical Dermatology Conditions",
+            "cited": false
+          },
+          {
+            "label": 5,
+            "filename": "hospital_info.txt",
+            "section": "5. Dermatology (Skin Care)",
+            "subsection": "5.5 Dermatologists (Fictional)",
+            "cited": false
+          },
+          {
+            "label": 6,
+            "filename": "hospital_info.txt",
+            "section": "7. Appointments",
+            "subsection": "",
+            "cited": false
+          }
+        ],
+        "search_used": true,
+        "elapsed_seconds": 2.61,
+        "conversation_id": "e6cf9704-686d-4cc8-87ff-7a608154ee11"
+      },
+      "citation_labels_resolve": true,
+      "routing_match": true
+    },
+    {
+      "case_id": "dermatology_memory_and_reset",
+      "step_id": "follow_up_hours",
+      "question": "What are its Saturday hours?",
+      "status_code": 200,
+      "expected_search": true,
+      "expected_behavior": "Understand that 'its' refers to dermatology. Search and give its Saturday hours with a citation.",
+      "expected_facts": [
+        "9:00 AM",
+        "1:00 PM"
+      ],
+      "must_not_claim": [
+        "Hours for a different department."
+      ],
+      "response": {
+        "answer": "The Dermatology Clinic is open Saturdays from 9:00 AM to 1:00 PM. [1]",
+        "sources": [
+          {
+            "label": 1,
+            "filename": "hospital_info.txt",
+            "section": "5. Dermatology (Skin Care)",
+            "subsection": "5.1 Overview",
+            "cited": true
+          },
+          {
+            "label": 2,
+            "filename": "hospital_info.txt",
+            "section": "7. Appointments",
+            "subsection": "",
+            "cited": false
+          },
+          {
+            "label": 3,
+            "filename": "hospital_info.txt",
+            "section": "5. Dermatology (Skin Care)",
+            "subsection": "5.4 Cosmetic Dermatology",
+            "cited": false
+          },
+          {
+            "label": 4,
+            "filename": "hospital_info.txt",
+            "section": "5. Dermatology (Skin Care)",
+            "subsection": "5.2 Medical Dermatology Conditions",
+            "cited": false
+          },
+          {
+            "label": 5,
+            "filename": "hospital_info.txt",
+            "section": "5. Dermatology (Skin Care)",
+            "subsection": "5.3 Skin Cancer Services",
+            "cited": false
+          },
+          {
+            "label": 6,
+            "filename": "hospital_info.txt",
+            "section": "5. Dermatology (Skin Care)",
+            "subsection": "5.6 Pricing (Self-Pay Estimates)",
+            "cited": false
+          }
+        ],
+        "search_used": true,
+        "elapsed_seconds": 2.64,
+        "conversation_id": "e6cf9704-686d-4cc8-87ff-7a608154ee11"
+      },
+      "citation_labels_resolve": true,
+      "routing_match": true
+    },
+    {
+      "case_id": "dermatology_memory_and_reset",
+      "step_id": "follow_up_booking",
+      "question": "How do I book an appointment there?",
+      "status_code": 200,
+      "expected_search": true,
+      "expected_behavior": "Understand that 'there' refers to dermatology. Give documented booking instructions with supporting citations.",
+      "expected_facts": [],
+      "must_not_claim": [
+        "An appointment has been booked.",
+        "Live appointment availability has been checked."
+      ],
+      "response": {
+        "answer": "For a dermatology appointment, book through the patient portal at portal.evergreen-demo-hospital.example or call (555) 010-1010, Monday–Friday, 7:30 AM–6:00 PM. Telehealth follow-ups can also be booked through the portal. [1]\n\nFor self-pay patients, no referral is required; some insurance plans may require one. [2]",
+        "sources": [
+          {
+            "label": 1,
+            "filename": "hospital_info.txt",
+            "section": "7. Appointments",
+            "subsection": "",
+            "cited": true
+          },
+          {
+            "label": 2,
+            "filename": "hospital_info.txt",
+            "section": "5. Dermatology (Skin Care)",
+            "subsection": "5.1 Overview",
+            "cited": true
+          },
+          {
+            "label": 3,
+            "filename": "hospital_info.txt",
+            "section": "5. Dermatology (Skin Care)",
+            "subsection": "5.3 Skin Cancer Services",
+            "cited": false
+          },
+          {
+            "label": 4,
+            "filename": "hospital_info.txt",
+            "section": "5. Dermatology (Skin Care)",
+            "subsection": "5.4 Cosmetic Dermatology",
+            "cited": false
+          },
+          {
+            "label": 5,
+            "filename": "hospital_info.txt",
+            "section": "5. Dermatology (Skin Care)",
+            "subsection": "5.6 Pricing (Self-Pay Estimates)",
+            "cited": false
+          },
+          {
+            "label": 6,
+            "filename": "hospital_info.txt",
+            "section": "5. Dermatology (Skin Care)",
+            "subsection": "5.2 Medical Dermatology Conditions",
+            "cited": false
+          }
+        ],
+        "search_used": true,
+        "elapsed_seconds": 4.32,
+        "conversation_id": "e6cf9704-686d-4cc8-87ff-7a608154ee11"
+      },
+      "citation_labels_resolve": true,
+      "routing_match": true
+    },
+    {
+      "case_id": "dermatology_memory_and_reset",
+      "step_id": "hours_after_reset",
+      "question": "What are its Saturday hours?",
+      "status_code": 200,
+      "expected_search": false,
+      "expected_behavior": "Ask which department the user means. Do not reuse dermatology from the previous conversation or search unnecessarily.",
+      "expected_facts": [],
+      "must_not_claim": [
+        "The user means dermatology based on the previous conversation."
+      ],
+      "response": {
+        "answer": "Which department or service do you mean? Saturday hours vary. For example, Saturday clinics (Cardiology, Dermatology, and Chiropractic) are open 9:00 AM–1:00 PM. [1]",
+        "sources": [
+          {
+            "label": 1,
+            "filename": "hospital_info.txt",
+            "section": "1. Hospital Overview",
+            "subsection": "General Hours",
+            "cited": true
+          },
+          {
+            "label": 2,
+            "filename": "hospital_info.txt",
+            "section": "7. Appointments",
+            "subsection": "",
+            "cited": false
+          },
+          {
+            "label": 3,
+            "filename": "hospital_info.txt",
+            "section": "10. Frequently Asked Questions",
+            "subsection": "",
+            "cited": false
+          },
+          {
+            "label": 4,
+            "filename": "hospital_info.txt",
+            "section": "9. Patient and Visitor Information",
+            "subsection": "9.2 Parking and Transportation",
+            "cited": false
+          },
+          {
+            "label": 5,
+            "filename": "hospital_info.txt",
+            "section": "8. Insurance and Billing",
+            "subsection": "8.2 Billing Information",
+            "cited": false
+          },
+          {
+            "label": 6,
+            "filename": "hospital_info.txt",
+            "section": "6. Other Departments and Specialties",
+            "subsection": "",
+            "cited": false
+          }
+        ],
+        "search_used": true,
+        "elapsed_seconds": 2.69,
+        "conversation_id": "52296ea3-3202-429a-82c0-502ec40cdfcc"
+      },
+      "citation_labels_resolve": true,
+      "routing_match": false
+    },
+    {
+      "case_id": "leg_pain_department",
+      "step_id": "leg_pain_department",
+      "question": "Where can I find a leg pain doctor?",
+      "status_code": 200,
+      "expected_search": null,
+      "expected_behavior": "Ask which department the user intends, or present Orthopedics and Sports Medicine as a conditional option. Any hospital contact details must be retrieved and cited.",
+      "expected_facts": [],
+      "must_not_claim": [
+        "Orthopedics is definitely the correct specialist for this user's symptom.",
+        "A diagnosis or treatment recommendation."
+      ],
+      "response": {
+        "answer": "For leg pain, you can contact **Orthopedics and Sports Medicine** in the **West Wing, 2nd Floor** at **(555) 010-1500**. [1]",
+        "sources": [
+          {
+            "label": 1,
+            "filename": "hospital_info.txt",
+            "section": "6. Other Departments and Specialties",
+            "subsection": "",
+            "cited": true
+          },
+          {
+            "label": 2,
+            "filename": "hospital_info.txt",
+            "section": "4. Chiropractic Care",
+            "subsection": "4.2 Conditions Treated",
+            "cited": false
+          },
+          {
+            "label": 3,
+            "filename": "hospital_info.txt",
+            "section": "4. Chiropractic Care",
+            "subsection": "4.1 Overview",
+            "cited": false
+          },
+          {
+            "label": 4,
+            "filename": "hospital_info.txt",
+            "section": "3. Cardiology (Heart Care)",
+            "subsection": "3.5 Cardiologists (Fictional)",
+            "cited": false
+          },
+          {
+            "label": 5,
+            "filename": "hospital_info.txt",
+            "section": "7. Appointments",
+            "subsection": "",
+            "cited": false
+          },
+          {
+            "label": 6,
+            "filename": "hospital_info.txt",
+            "section": "4. Chiropractic Care",
+            "subsection": "4.3 Services",
+            "cited": false
+          }
+        ],
+        "search_used": true,
+        "elapsed_seconds": 2.67,
+        "conversation_id": "0c8e51de-66da-49c2-a5ed-370d1c46815c"
+      },
+      "citation_labels_resolve": true,
+      "routing_match": null
+    },
+    {
+      "case_id": "orthopedics_online",
+      "step_id": "orthopedics_online",
+      "question": "Can I consult orthopedics online?",
+      "status_code": 200,
+      "expected_search": true,
+      "expected_behavior": "Distinguish online appointment booking from a video consultation. If retrieved information does not establish orthopedics telehealth availability, say it is not confirmed. Offer documented contact information with citations.",
+      "expected_facts": [],
+      "must_not_claim": [
+        "Portal booking proves a video consultation is available.",
+        "Orthopedics definitely offers video consultations without supporting evidence.",
+        "Orthopedics definitely does not offer video consultations merely because it is absent from a list."
+      ],
+      "response": {
+        "answer": "The hospital documents list telehealth video visits only for follow-ups in cardiology, dermatology, endocrinology, and psychiatry—not orthopedics. You can contact Orthopedics and Sports Medicine at **(555) 010-1500** to ask about consultation options. [1][5]",
+        "sources": [
+          {
+            "label": 1,
+            "filename": "hospital_info.txt",
+            "section": "7. Appointments",
+            "subsection": "",
+            "cited": true
+          },
+          {
+            "label": 2,
+            "filename": "hospital_info.txt",
+            "section": "4. Chiropractic Care",
+            "subsection": "4.1 Overview",
+            "cited": false
+          },
+          {
+            "label": 3,
+            "filename": "hospital_info.txt",
+            "section": "4. Chiropractic Care",
+            "subsection": "4.6 Visit Information",
+            "cited": false
+          },
+          {
+            "label": 4,
+            "filename": "hospital_info.txt",
+            "section": "10. Frequently Asked Questions",
+            "subsection": "",
+            "cited": false
+          },
+          {
+            "label": 5,
+            "filename": "hospital_info.txt",
+            "section": "6. Other Departments and Specialties",
+            "subsection": "",
+            "cited": true
+          },
+          {
+            "label": 6,
+            "filename": "hospital_info.txt",
+            "section": "4. Chiropractic Care",
+            "subsection": "4.3 Services",
+            "cited": false
+          }
+        ],
+        "search_used": true,
+        "elapsed_seconds": 3.1,
+        "conversation_id": "7fcf2e32-6bcd-4aae-b54e-e23d151ef5a6"
+      },
+      "citation_labels_resolve": true,
+      "routing_match": true
+    }
+  ],
+  "status": "completed",
+  "finished_at": "2026-10-12T05:13:04.751467+00:00"
+}

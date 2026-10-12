@@ -1,0 +1,657 @@
+{
+  "run_id": "20261012T043834Z_fcb13575",
+  "started_at": "2026-10-12T04:38:34.577084+00:00",
+  "status": "running",
+  "test_cases": 11,
+  "planned_questions": 15,
+  "results": [
+    {
+      "case_id": "cardiology_location",
+      "step_id": "cardiology_location",
+      "reset_before": false,
+      "question": "Where is the cardiology department?",
+      "answer": "The cardiology department is in the East Tower, 3rd Floor. [4]",
+      "sources": [
+        {
+          "label": 1,
+          "filename": "hospital_info.txt",
+          "section": "6. Other Departments and Specialties",
+          "subsection": ""
+        },
+        {
+          "label": 2,
+          "filename": "hospital_info.txt",
+          "section": "3. Cardiology (Heart Care)",
+          "subsection": "3.4 Treatments and Procedures"
+        },
+        {
+          "label": 3,
+          "filename": "hospital_info.txt",
+          "section": "3. Cardiology (Heart Care)",
+          "subsection": "3.3 Diagnostic Services"
+        },
+        {
+          "label": 4,
+          "filename": "hospital_info.txt",
+          "section": "3. Cardiology (Heart Care)",
+          "subsection": "3.1 Overview"
+        },
+        {
+          "label": 5,
+          "filename": "hospital_info.txt",
+          "section": "3. Cardiology (Heart Care)",
+          "subsection": "3.2 Conditions Treated"
+        },
+        {
+          "label": 6,
+          "filename": "hospital_info.txt",
+          "section": "3. Cardiology (Heart Care)",
+          "subsection": "3.5 Cardiologists (Fictional)"
+        }
+      ],
+      "expected_behavior": "Give the documented location with a supporting citation.",
+      "expected_facts": [
+        "East Tower",
+        "3rd Floor"
+      ],
+      "must_not_claim": [],
+      "expected_search": true,
+      "actual_search": true,
+      "routing_match": true,
+      "verdict": "pass",
+      "note": ""
+    },
+    {
+      "case_id": "cardiology_price",
+      "step_id": "cardiology_price",
+      "reset_before": false,
+      "question": "How much does a new cardiology consultation cost?",
+      "answer": "A new cardiology consultation costs **$250** (self-pay estimate). [1]",
+      "sources": [
+        {
+          "label": 1,
+          "filename": "hospital_info.txt",
+          "section": "3. Cardiology (Heart Care)",
+          "subsection": "3.6 Pricing (Self-Pay Estimates)"
+        },
+        {
+          "label": 2,
+          "filename": "hospital_info.txt",
+          "section": "3. Cardiology (Heart Care)",
+          "subsection": "3.7 Preparing for a Cardiology Visit"
+        },
+        {
+          "label": 3,
+          "filename": "hospital_info.txt",
+          "section": "3. Cardiology (Heart Care)",
+          "subsection": "3.3 Diagnostic Services"
+        },
+        {
+          "label": 4,
+          "filename": "hospital_info.txt",
+          "section": "3. Cardiology (Heart Care)",
+          "subsection": "3.4 Treatments and Procedures"
+        },
+        {
+          "label": 5,
+          "filename": "hospital_info.txt",
+          "section": "3. Cardiology (Heart Care)",
+          "subsection": "3.1 Overview"
+        },
+        {
+          "label": 6,
+          "filename": "hospital_info.txt",
+          "section": "5. Dermatology (Skin Care)",
+          "subsection": "5.6 Pricing (Self-Pay Estimates)"
+        }
+      ],
+      "expected_behavior": "Give the documented self-pay estimate with a supporting citation.",
+      "expected_facts": [
+        "$250",
+        "self-pay estimate"
+      ],
+      "must_not_claim": [
+        "The price is guaranteed for every patient."
+      ],
+      "expected_search": true,
+      "actual_search": true,
+      "routing_match": true,
+      "verdict": "pass",
+      "note": ""
+    },
+    {
+      "case_id": "dermatology_hours",
+      "step_id": "dermatology_hours",
+      "reset_before": false,
+      "question": "What are the dermatology clinic hours on Saturday?",
+      "answer": "The dermatology clinic is open Saturdays from 9:00 AM to 1:00 PM. [1]",
+      "sources": [
+        {
+          "label": 1,
+          "filename": "hospital_info.txt",
+          "section": "5. Dermatology (Skin Care)",
+          "subsection": "5.1 Overview"
+        },
+        {
+          "label": 2,
+          "filename": "hospital_info.txt",
+          "section": "7. Appointments",
+          "subsection": ""
+        },
+        {
+          "label": 3,
+          "filename": "hospital_info.txt",
+          "section": "5. Dermatology (Skin Care)",
+          "subsection": "5.4 Cosmetic Dermatology"
+        },
+        {
+          "label": 4,
+          "filename": "hospital_info.txt",
+          "section": "5. Dermatology (Skin Care)",
+          "subsection": "5.2 Medical Dermatology Conditions"
+        },
+        {
+          "label": 5,
+          "filename": "hospital_info.txt",
+          "section": "5. Dermatology (Skin Care)",
+          "subsection": "5.3 Skin Cancer Services"
+        },
+        {
+          "label": 6,
+          "filename": "hospital_info.txt",
+          "section": "10. Frequently Asked Questions",
+          "subsection": ""
+        }
+      ],
+      "expected_behavior": "Give the documented Saturday hours with a supporting citation.",
+      "expected_facts": [
+        "9:00 AM",
+        "1:00 PM"
+      ],
+      "must_not_claim": [],
+      "expected_search": true,
+      "actual_search": true,
+      "routing_match": true,
+      "verdict": "pass",
+      "note": ""
+    },
+    {
+      "case_id": "unknown_doctor",
+      "step_id": "unknown_doctor",
+      "reset_before": false,
+      "question": "What is Dr. Smith's phone number?",
+      "answer": "I couldn't find Dr. Smith’s phone number in the hospital documents. For general appointment inquiries, call (555) 010-1010. [2]",
+      "sources": [
+        {
+          "label": 1,
+          "filename": "hospital_info.txt",
+          "section": "6. Other Departments and Specialties",
+          "subsection": ""
+        },
+        {
+          "label": 2,
+          "filename": "hospital_info.txt",
+          "section": "7. Appointments",
+          "subsection": ""
+        },
+        {
+          "label": 3,
+          "filename": "hospital_info.txt",
+          "section": "",
+          "subsection": ""
+        },
+        {
+          "label": 4,
+          "filename": "hospital_info.txt",
+          "section": "9. Patient and Visitor Information",
+          "subsection": "9.4 Medical Records"
+        },
+        {
+          "label": 5,
+          "filename": "hospital_info.txt",
+          "section": "3. Cardiology (Heart Care)",
+          "subsection": "3.5 Cardiologists (Fictional)"
+        },
+        {
+          "label": 6,
+          "filename": "hospital_info.txt",
+          "section": "8. Insurance and Billing",
+          "subsection": "8.2 Billing Information"
+        }
+      ],
+      "expected_behavior": "Explain that Dr. Smith's number was not found. A documented general contact may be offered if clearly identified and cited.",
+      "expected_facts": [],
+      "must_not_claim": [
+        "A retrieved phone number belongs to Dr. Smith."
+      ],
+      "expected_search": true,
+      "actual_search": true,
+      "routing_match": true,
+      "verdict": "pass",
+      "note": ""
+    },
+    {
+      "case_id": "appointment_availability",
+      "step_id": "appointment_availability",
+      "reset_before": false,
+      "question": "Is a dermatology appointment available on October 15 at 10 AM?",
+      "answer": "I can’t check live appointment availability, so I can’t confirm whether October 15 at 10 AM is open. You can check the patient portal or call the dermatology clinic at (555) 010-1400. [1][2]",
+      "sources": [
+        {
+          "label": 1,
+          "filename": "hospital_info.txt",
+          "section": "7. Appointments",
+          "subsection": ""
+        },
+        {
+          "label": 2,
+          "filename": "hospital_info.txt",
+          "section": "5. Dermatology (Skin Care)",
+          "subsection": "5.1 Overview"
+        },
+        {
+          "label": 3,
+          "filename": "hospital_info.txt",
+          "section": "5. Dermatology (Skin Care)",
+          "subsection": "5.3 Skin Cancer Services"
+        },
+        {
+          "label": 4,
+          "filename": "hospital_info.txt",
+          "section": "5. Dermatology (Skin Care)",
+          "subsection": "5.4 Cosmetic Dermatology"
+        },
+        {
+          "label": 5,
+          "filename": "hospital_info.txt",
+          "section": "5. Dermatology (Skin Care)",
+          "subsection": "5.2 Medical Dermatology Conditions"
+        },
+        {
+          "label": 6,
+          "filename": "hospital_info.txt",
+          "section": "5. Dermatology (Skin Care)",
+          "subsection": "5.6 Pricing (Self-Pay Estimates)"
+        }
+      ],
+      "expected_behavior": "Explain that live availability cannot be checked. Documented booking instructions may be provided with citations.",
+      "expected_facts": [],
+      "must_not_claim": [
+        "The requested slot is available.",
+        "An appointment has been booked."
+      ],
+      "expected_search": true,
+      "actual_search": true,
+      "routing_match": true,
+      "verdict": "pass",
+      "note": ""
+    },
+    {
+      "case_id": "greeting",
+      "step_id": "greeting",
+      "reset_before": false,
+      "question": "Hello",
+      "answer": "Hello! How can I help with hospital information?",
+      "sources": [],
+      "expected_behavior": "Respond briefly with a greeting without searching hospital documents.",
+      "expected_facts": [],
+      "must_not_claim": [],
+      "expected_search": false,
+      "actual_search": false,
+      "routing_match": true,
+      "verdict": "pass",
+      "note": ""
+    },
+    {
+      "case_id": "ambiguous_hours_fresh",
+      "step_id": "ambiguous_hours_fresh",
+      "reset_before": false,
+      "question": "What are its Saturday hours?",
+      "answer": "Which department or service do you mean? Saturday hours vary—for example, Saturday clinics are open 9:00 AM–1:00 PM, and the pharmacy is open 9:00 AM–5:00 PM. [1]",
+      "sources": [
+        {
+          "label": 1,
+          "filename": "hospital_info.txt",
+          "section": "1. Hospital Overview",
+          "subsection": "General Hours"
+        },
+        {
+          "label": 2,
+          "filename": "hospital_info.txt",
+          "section": "10. Frequently Asked Questions",
+          "subsection": ""
+        },
+        {
+          "label": 3,
+          "filename": "hospital_info.txt",
+          "section": "6. Other Departments and Specialties",
+          "subsection": ""
+        },
+        {
+          "label": 4,
+          "filename": "hospital_info.txt",
+          "section": "7. Appointments",
+          "subsection": ""
+        },
+        {
+          "label": 5,
+          "filename": "hospital_info.txt",
+          "section": "8. Insurance and Billing",
+          "subsection": "8.2 Billing Information"
+        },
+        {
+          "label": 6,
+          "filename": "hospital_info.txt",
+          "section": "2. Emergency Services",
+          "subsection": "2.5 Fast Track and Urgent Care"
+        }
+      ],
+      "expected_behavior": "Ask which department or service the user means without searching or guessing.",
+      "expected_facts": [],
+      "must_not_claim": [
+        "A particular department has already been established."
+      ],
+      "expected_search": false,
+      "actual_search": true,
+      "routing_match": false,
+      "verdict": "fail",
+      "note": ""
+    },
+    {
+      "case_id": "greeting_then_ambiguous_hours",
+      "step_id": "greet",
+      "reset_before": false,
+      "question": "Hello",
+      "answer": "Hello! How can I help with hospital information?",
+      "sources": [],
+      "expected_behavior": "Respond with a greeting without searching.",
+      "expected_facts": [],
+      "must_not_claim": [],
+      "expected_search": false,
+      "actual_search": false,
+      "routing_match": true,
+      "verdict": "pass",
+      "note": ""
+    },
+    {
+      "case_id": "greeting_then_ambiguous_hours",
+      "step_id": "ask_unnamed_hours",
+      "reset_before": false,
+      "question": "What are its Saturday hours?",
+      "answer": "Which department or service do you mean? The Saturday hours vary—for example, Saturday clinics are 9:00 AM–1:00 PM, and the laboratory is open 7:00 AM–7:00 PM. [1]",
+      "sources": [
+        {
+          "label": 1,
+          "filename": "hospital_info.txt",
+          "section": "1. Hospital Overview",
+          "subsection": "General Hours"
+        },
+        {
+          "label": 2,
+          "filename": "hospital_info.txt",
+          "section": "7. Appointments",
+          "subsection": ""
+        },
+        {
+          "label": 3,
+          "filename": "hospital_info.txt",
+          "section": "10. Frequently Asked Questions",
+          "subsection": ""
+        },
+        {
+          "label": 4,
+          "filename": "hospital_info.txt",
+          "section": "9. Patient and Visitor Information",
+          "subsection": "9.2 Parking and Transportation"
+        },
+        {
+          "label": 5,
+          "filename": "hospital_info.txt",
+          "section": "8. Insurance and Billing",
+          "subsection": "8.2 Billing Information"
+        },
+        {
+          "label": 6,
+          "filename": "hospital_info.txt",
+          "section": "6. Other Departments and Specialties",
+          "subsection": ""
+        }
+      ],
+      "expected_behavior": "Recognize that a greeting did not establish a department. Ask for clarification without searching.",
+      "expected_facts": [],
+      "must_not_claim": [
+        "A particular department has already been established."
+      ],
+      "expected_search": false,
+      "actual_search": true,
+      "routing_match": false,
+      "verdict": "pass",
+      "note": ""
+    },
+    {
+      "case_id": "dermatology_memory_and_reset",
+      "step_id": "establish_department",
+      "reset_before": false,
+      "question": "Where is the dermatology clinic?",
+      "answer": "The dermatology clinic is in the **South Wing, 1st Floor**. [1]",
+      "sources": [
+        {
+          "label": 1,
+          "filename": "hospital_info.txt",
+          "section": "5. Dermatology (Skin Care)",
+          "subsection": "5.1 Overview"
+        },
+        {
+          "label": 2,
+          "filename": "hospital_info.txt",
+          "section": "6. Other Departments and Specialties",
+          "subsection": ""
+        },
+        {
+          "label": 3,
+          "filename": "hospital_info.txt",
+          "section": "5. Dermatology (Skin Care)",
+          "subsection": "5.4 Cosmetic Dermatology"
+        },
+        {
+          "label": 4,
+          "filename": "hospital_info.txt",
+          "section": "5. Dermatology (Skin Care)",
+          "subsection": "5.2 Medical Dermatology Conditions"
+        },
+        {
+          "label": 5,
+          "filename": "hospital_info.txt",
+          "section": "5. Dermatology (Skin Care)",
+          "subsection": "5.3 Skin Cancer Services"
+        },
+        {
+          "label": 6,
+          "filename": "hospital_info.txt",
+          "section": "5. Dermatology (Skin Care)",
+          "subsection": "5.5 Dermatologists (Fictional)"
+        }
+      ],
+      "expected_behavior": "Give the documented dermatology location with a citation.",
+      "expected_facts": [
+        "South Wing",
+        "1st Floor"
+      ],
+      "must_not_claim": [],
+      "expected_search": true,
+      "actual_search": true,
+      "routing_match": true,
+      "verdict": "pass",
+      "note": ""
+    },
+    {
+      "case_id": "dermatology_memory_and_reset",
+      "step_id": "follow_up_hours",
+      "reset_before": false,
+      "question": "What are its Saturday hours?",
+      "answer": "The dermatology clinic is open Saturdays from 9:00 AM to 1:00 PM. [1]",
+      "sources": [
+        {
+          "label": 1,
+          "filename": "hospital_info.txt",
+          "section": "5. Dermatology (Skin Care)",
+          "subsection": "5.1 Overview"
+        },
+        {
+          "label": 2,
+          "filename": "hospital_info.txt",
+          "section": "5. Dermatology (Skin Care)",
+          "subsection": "5.4 Cosmetic Dermatology"
+        },
+        {
+          "label": 3,
+          "filename": "hospital_info.txt",
+          "section": "7. Appointments",
+          "subsection": ""
+        },
+        {
+          "label": 4,
+          "filename": "hospital_info.txt",
+          "section": "5. Dermatology (Skin Care)",
+          "subsection": "5.2 Medical Dermatology Conditions"
+        },
+        {
+          "label": 5,
+          "filename": "hospital_info.txt",
+          "section": "5. Dermatology (Skin Care)",
+          "subsection": "5.3 Skin Cancer Services"
+        },
+        {
+          "label": 6,
+          "filename": "hospital_info.txt",
+          "section": "5. Dermatology (Skin Care)",
+          "subsection": "5.6 Pricing (Self-Pay Estimates)"
+        }
+      ],
+      "expected_behavior": "Understand that 'its' refers to dermatology. Search and give its Saturday hours with a citation.",
+      "expected_facts": [
+        "9:00 AM",
+        "1:00 PM"
+      ],
+      "must_not_claim": [
+        "Hours for a different department."
+      ],
+      "expected_search": true,
+      "actual_search": true,
+      "routing_match": true,
+      "verdict": "pass",
+      "note": ""
+    },
+    {
+      "case_id": "dermatology_memory_and_reset",
+      "step_id": "follow_up_booking",
+      "reset_before": false,
+      "question": "How do I book an appointment there?",
+      "answer": "You can book a dermatology appointment through the patient portal at **portal.evergreen-demo-hospital.example** or call **(555) 010-1010, Monday–Friday, 7:30 AM–6:00 PM**. [1] For a video follow-up, book through the portal. [1]",
+      "sources": [
+        {
+          "label": 1,
+          "filename": "hospital_info.txt",
+          "section": "7. Appointments",
+          "subsection": ""
+        },
+        {
+          "label": 2,
+          "filename": "hospital_info.txt",
+          "section": "5. Dermatology (Skin Care)",
+          "subsection": "5.1 Overview"
+        },
+        {
+          "label": 3,
+          "filename": "hospital_info.txt",
+          "section": "5. Dermatology (Skin Care)",
+          "subsection": "5.4 Cosmetic Dermatology"
+        },
+        {
+          "label": 4,
+          "filename": "hospital_info.txt",
+          "section": "5. Dermatology (Skin Care)",
+          "subsection": "5.3 Skin Cancer Services"
+        },
+        {
+          "label": 5,
+          "filename": "hospital_info.txt",
+          "section": "5. Dermatology (Skin Care)",
+          "subsection": "5.6 Pricing (Self-Pay Estimates)"
+        },
+        {
+          "label": 6,
+          "filename": "hospital_info.txt",
+          "section": "5. Dermatology (Skin Care)",
+          "subsection": "5.2 Medical Dermatology Conditions"
+        }
+      ],
+      "expected_behavior": "Understand that 'there' refers to dermatology. Give documented booking instructions with supporting citations.",
+      "expected_facts": [],
+      "must_not_claim": [
+        "An appointment has been booked.",
+        "Live appointment availability has been checked."
+      ],
+      "expected_search": true,
+      "actual_search": true,
+      "routing_match": true,
+      "verdict": "pass",
+      "note": ""
+    },
+    {
+      "case_id": "dermatology_memory_and_reset",
+      "step_id": "hours_after_reset",
+      "reset_before": true,
+      "question": "What are its Saturday hours?",
+      "answer": "Which department or service do you mean? The conversation doesn’t specify what “its” refers to.",
+      "sources": [
+        {
+          "label": 1,
+          "filename": "hospital_info.txt",
+          "section": "1. Hospital Overview",
+          "subsection": "General Hours"
+        },
+        {
+          "label": 2,
+          "filename": "hospital_info.txt",
+          "section": "6. Other Departments and Specialties",
+          "subsection": ""
+        },
+        {
+          "label": 3,
+          "filename": "hospital_info.txt",
+          "section": "10. Frequently Asked Questions",
+          "subsection": ""
+        },
+        {
+          "label": 4,
+          "filename": "hospital_info.txt",
+          "section": "7. Appointments",
+          "subsection": ""
+        },
+        {
+          "label": 5,
+          "filename": "hospital_info.txt",
+          "section": "2. Emergency Services",
+          "subsection": "2.1 Overview"
+        },
+        {
+          "label": 6,
+          "filename": "hospital_info.txt",
+          "section": "2. Emergency Services",
+          "subsection": "2.4 Emergency Services Offered"
+        }
+      ],
+      "expected_behavior": "Ask which department the user means. Do not reuse dermatology from the previous conversation or search unnecessarily.",
+      "expected_facts": [],
+      "must_not_claim": [
+        "The user means dermatology based on the previous conversation."
+      ],
+      "expected_search": false,
+      "actual_search": true,
+      "routing_match": false,
+      "verdict": "pass",
+      "note": ""
+    }
+  ]
+}

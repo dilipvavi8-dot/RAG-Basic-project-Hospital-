@@ -1,0 +1,21 @@
+# Local Python environment
+.venv/
+
+# API keys and local secrets
+.env
+.env.*
+rag-pipeline/.env
+rag-pipeline/.env.*
+!rag-pipeline/.env.example
+
+# Generated Python files
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Local vector database
+chroma_db/
+rag-pipeline/chroma_db/
+
+# macOS metadata
+.DS_Store

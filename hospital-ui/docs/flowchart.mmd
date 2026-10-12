@@ -1,0 +1,16 @@
+flowchart TD
+    subgraph indexing["1. Build index separately"]
+      document["Hospital document"] --> loader["Load text and source"]
+      loader --> chunks["Split at headings"] --> embeddings["OpenAI: embed new chunks"]
+      embeddings --> saved[("Persisted Chroma index")]
+    end
+    subgraph chatting["2. Chat using the saved index"]
+      browser["Browser question"] --> backend["Local FastAPI backend"]
+      backend --> history["LangGraph conversation state"] --> decision{"AI requests search?"}
+      decision -->|No| direct["Greeting, clarification, or scope reply"]
+      decision -->|Yes| query["Focused query and query embedding"]
+      query --> search["Search saved Chroma index"] --> passages["Current-turn passages"]
+      passages --> answer["Same LLM writes cited answer"]
+      direct --> display["Browser displays answer and references"]
+      answer --> display
+    end

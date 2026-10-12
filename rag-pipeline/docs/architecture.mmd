@@ -1,0 +1,55 @@
+flowchart TD
+    terminal[/"Terminal user"/]
+    rawDoc["Hospital document"]
+    questions["Evaluation questions"]
+
+    subgraph localApp ["Local Python application"]
+        indexScript["Index builder"]
+        loader["Document loader"]
+        chunker["Heading chunker"]
+        cli["Terminal application"]
+        graphRunner["LangGraph workflow"]
+        searchTool["Hospital search tool"]
+        retriever["Similarity retriever"]
+        evaluator["Interactive evaluator"]
+    end
+
+    chroma[("Chroma index on disk")]
+    chatMemory[("Conversation memory in process")]
+    reports[("Evaluation JSON reports")]
+    openAi["OpenAI APIs"]
+    langsmith["LangSmith tracing"]
+
+    rawDoc --> indexScript --> loader --> chunker
+    chunker -->|"Embeds chunks"| openAi
+    chunker -->|"Persists vectors"| chroma
+
+    terminal --> cli --> graphRunner
+    graphRunner <-->|"Read and update"| chatMemory
+    graphRunner -->|"Decision and answer"| openAi
+    graphRunner -->|"Optional tool call"| searchTool
+    searchTool --> retriever
+    retriever -->|"Embeds query"| openAi
+    retriever -->|"Searches"| chroma
+    retriever -->|"Returns passages"| graphRunner
+    graphRunner -->|"Answer and sources"| cli
+
+    questions --> evaluator --> graphRunner
+    evaluator -->|"Saves reviews"| reports
+    graphRunner -.->|"Sends traces"| langsmith
+
+    subgraph legend ["Legend"]
+        localExample["Local code or file"]
+        storedExample[("Local persisted data")]
+        memoryExample[("Temporary process memory")]
+        externalExample["External service"]
+    end
+
+    classDef localStore fill:#E8F5E9,stroke:#2E7D32
+    classDef temporary fill:#FFF3E0,stroke:#EF6C00
+    classDef external fill:#E3F2FD,stroke:#1565C0
+    classDef input fill:#F5F5F5,stroke:#616161
+    class chroma,reports,storedExample localStore
+    class chatMemory,memoryExample temporary
+    class openAi,langsmith,externalExample external
+    class terminal,rawDoc,questions input

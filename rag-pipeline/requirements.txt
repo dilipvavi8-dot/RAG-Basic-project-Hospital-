@@ -1,0 +1,8 @@
+# Python dependencies will be added and verified incrementally.
+langchain-openai==1.7.0
+
+python-dotenv
+
+langchain-chroma==1.1.0
+
+langgraph==1.2.14

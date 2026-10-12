@@ -1,0 +1,420 @@
+# Evergreen Community Medical Center (DEMO HOSPITAL)
+
+> **DISCLAIMER:** This is a fictional hospital created only for testing a RAG (Retrieval-Augmented Generation) demo. All names, addresses, phone numbers, prices, and policies are made up. Phone numbers use the reserved 555-01XX range. Do not use for real medical decisions. In a real emergency, call 911.
+
+---
+
+## 1. Hospital Overview
+
+- **Name:** Evergreen Community Medical Center (ECMC)
+- **Type:** General acute-care teaching hospital
+- **Founded:** 1974
+- **Beds:** 420 licensed beds (60 ICU, 24 NICU, 30 emergency bays)
+- **Address:** 1200 Evergreen Parkway, Springfield, TX 75000, USA
+- **Main phone:** (555) 010-1000
+- **Appointment line:** (555) 010-1010
+- **Emergency department direct line:** (555) 010-1911
+- **Billing office:** (555) 010-1050
+- **Medical records:** (555) 010-1060
+- **Website (fictional):** www.evergreen-demo-hospital.example
+- **Accreditation (fictional):** Level II Trauma Center, Certified Chest Pain Center, Primary Stroke Center
+- **Mission:** Provide compassionate, affordable, evidence-based care to every patient in the community.
+
+### General Hours
+
+| Service | Hours |
+|---|---|
+| Emergency Department | 24 hours, 7 days a week |
+| Main Hospital Visiting | 10:00 AM – 8:00 PM daily |
+| ICU Visiting | 11:00 AM – 1:00 PM and 5:00 PM – 7:00 PM (2 visitors max) |
+| Outpatient Clinics | Mon–Fri 8:00 AM – 6:00 PM |
+| Saturday Clinics (Cardiology, Dermatology, Chiropractic) | 9:00 AM – 1:00 PM |
+| Pharmacy | Mon–Fri 8:00 AM – 9:00 PM, Sat–Sun 9:00 AM – 5:00 PM |
+| Laboratory | Mon–Sat 7:00 AM – 7:00 PM |
+| Radiology / Imaging | Mon–Fri 7:00 AM – 8:00 PM, Sat 8:00 AM – 4:00 PM (24/7 for ER patients) |
+| Cafeteria | Daily 6:30 AM – 8:00 PM |
+
+---
+
+## 2. Emergency Services
+
+### 2.1 Overview
+The Emergency Department (ED) at ECMC is open 24/7, 365 days a year. It is a Level II Trauma Center staffed by board-certified emergency physicians, trauma surgeons, nurses, and paramedics. Ambulance and helicopter landing access is available.
+
+- **Location:** North Wing, Ground Floor, Entrance C
+- **Emergency phone:** (555) 010-1911
+- **Ambulance bay:** Entrance C, Lane 2
+- **Helipad:** Rooftop, East Tower
+- **Average wait time (non-critical):** 25–45 minutes
+- **Average door-to-doctor time (critical):** under 5 minutes
+
+### 2.2 When to Go to the Emergency Room
+Go to the ED or call 911 for:
+- Chest pain, pressure, or tightness
+- Difficulty breathing or shortness of breath
+- Signs of stroke (face drooping, arm weakness, slurred speech)
+- Severe bleeding or deep wounds
+- Head injury or loss of consciousness
+- Severe burns
+- Broken bones or major trauma
+- Seizures
+- Severe allergic reactions (anaphylaxis)
+- Poisoning or overdose
+- Sudden severe abdominal pain
+- Thoughts of self-harm (call or text 988 as well)
+
+### 2.3 Triage Levels (Emergency Severity Index)
+
+| Level | Description | Example |
+|---|---|---|
+| 1 | Immediate life-saving intervention | Cardiac arrest |
+| 2 | High risk, should not wait | Chest pain, stroke symptoms |
+| 3 | Urgent, multiple resources needed | Abdominal pain, fracture |
+| 4 | Less urgent, one resource | Simple laceration |
+| 5 | Non-urgent | Minor rash, sore throat |
+
+### 2.4 Emergency Services Offered
+- Trauma resuscitation and surgery
+- Cardiac emergencies (STEMI/heart attack protocol, door-to-balloon target under 60 minutes)
+- Stroke team (CT and thrombolysis available 24/7)
+- Pediatric emergency care
+- Obstetric and gynecological emergencies
+- Psychiatric emergency evaluation
+- Toxicology and poison management
+- Burn stabilization
+- Orthopedic emergency care and splinting
+- On-site CT, MRI, X-ray, ultrasound, and lab
+
+### 2.5 Fast Track and Urgent Care
+- **Fast Track Clinic:** Located inside the ED for minor injuries and illnesses. Open 10:00 AM – 10:00 PM daily.
+- **Urgent Care Center:** Adjacent to the main building, walk-in basis, Mon–Sun 8:00 AM – 10:00 PM. Handles colds, flu, minor cuts, sprains, UTIs, and mild infections.
+- **Emergency visit cost estimate (self-pay):** $350 – $2,500 depending on severity (before tests).
+
+### 2.6 Emergency Policy Notes
+- Under federal EMTALA law, ECMC treats every patient regardless of ability to pay or insurance status.
+- One family member may accompany a patient in the treatment area at the discretion of staff.
+- Bring a photo ID, insurance card, and list of current medications if possible.
+
+---
+
+## 3. Cardiology (Heart Care)
+
+### 3.1 Overview
+The **Evergreen Heart & Vascular Institute** provides comprehensive prevention, diagnosis, and treatment of heart disease.
+
+- **Location:** East Tower, 3rd Floor
+- **Phone:** (555) 010-1200
+- **Hours:** Mon–Fri 8:00 AM – 6:00 PM, Sat 9:00 AM – 1:00 PM
+- **Referral required:** No for self-pay patients; some insurance plans (HMO) require a referral.
+
+### 3.2 Conditions Treated
+- Coronary artery disease and heart attack
+- Heart failure
+- Atrial fibrillation and other arrhythmias
+- High blood pressure (hypertension)
+- High cholesterol
+- Valvular heart disease
+- Congenital heart disease
+- Peripheral artery disease
+- Cardiomyopathy
+
+### 3.3 Diagnostic Services
+- Electrocardiogram (ECG/EKG)
+- Echocardiogram
+- Stress test (treadmill and nuclear)
+- Holter and event monitors (24 hours – 30 days)
+- Coronary CT angiography
+- Cardiac MRI
+- Cardiac catheterization lab
+
+### 3.4 Treatments and Procedures
+- Angioplasty and stent placement
+- Pacemaker and ICD implantation
+- Catheter ablation for arrhythmias
+- Coronary artery bypass grafting (CABG)
+- Transcatheter aortic valve replacement (TAVR)
+- Cardiac rehabilitation program (12-week supervised program)
+
+### 3.5 Cardiologists (Fictional)
+
+| Doctor | Specialty | Clinic Days |
+|---|---|---|
+| Dr. Maria Alvarez, MD, FACC | General and preventive cardiology | Mon, Wed, Fri |
+| Dr. James Okafor, MD | Interventional cardiology | Tue, Thu, Sat |
+| Dr. Priya Raman, MD | Electrophysiology (heart rhythm) | Mon, Tue, Thu |
+| Dr. Thomas Lindqvist, MD | Heart failure and transplant | Wed, Fri |
+
+### 3.6 Pricing (Self-Pay Estimates)
+- New patient consultation: $250
+- Follow-up visit: $150
+- ECG: $75
+- Echocardiogram: $450
+- Stress test: $600
+- Cardiac catheterization: $4,500 – $7,000
+
+### 3.7 Preparing for a Cardiology Visit
+- Bring medication list and past test results.
+- Avoid caffeine 24 hours before a stress test.
+- Wear comfortable clothing and walking shoes for stress tests.
+- Fasting for 4 hours is required before some tests (you will be told when).
+
+---
+
+## 4. Chiropractic Care
+
+### 4.1 Overview
+The **Evergreen Spine & Chiropractic Center** offers non-surgical care for back, neck, and joint problems, in coordination with our orthopedic and physical therapy teams.
+
+- **Location:** West Wing, 2nd Floor
+- **Phone:** (555) 010-1300
+- **Hours:** Mon–Fri 8:00 AM – 6:00 PM, Sat 9:00 AM – 1:00 PM
+- **Referral required:** No
+
+### 4.2 Conditions Treated
+- Lower back pain and sciatica
+- Neck pain and stiffness
+- Tension and cervicogenic headaches
+- Herniated or bulging discs (conservative care)
+- Joint pain (shoulder, hip, knee)
+- Sports and work injuries
+- Whiplash after car accidents
+- Posture-related pain
+- Prenatal back and pelvic pain
+
+### 4.3 Services
+- Spinal adjustment and manipulation
+- Soft tissue therapy and myofascial release
+- Therapeutic exercise and stretching programs
+- Spinal decompression therapy
+- Ultrasound and electrical stimulation therapy
+- Ergonomic and posture assessment
+- Kinesiology taping
+- Digital X-ray (on-site)
+
+### 4.4 Chiropractors (Fictional)
+
+| Doctor | Focus |
+|---|---|
+| Dr. Daniel Whitfield, DC | General spinal care, sciatica |
+| Dr. Hannah Cho, DC | Sports injuries, rehabilitation |
+| Dr. Marcus Bell, DC | Auto accident and whiplash care |
+
+### 4.5 Pricing (Self-Pay Estimates)
+- Initial exam with X-rays: $175
+- Standard adjustment visit: $65
+- Spinal decompression session: $90
+- Therapy add-on (ultrasound/e-stim): $35
+- Package: 10 visits for $550
+
+### 4.6 Visit Information
+- First visit lasts about 60 minutes; follow-ups last 20–30 minutes.
+- Many insurance plans cover a limited number of chiropractic visits per year (commonly 12–20); check with your insurer.
+- Chiropractic care is not recommended for patients with certain conditions such as unstable fractures, spinal cancer, or severe osteoporosis; the doctor screens every patient before treatment.
+
+---
+
+## 5. Dermatology (Skin Care)
+
+### 5.1 Overview
+The **Evergreen Skin Health & Dermatology Clinic** treats medical, surgical, and cosmetic skin conditions for children and adults.
+
+- **Location:** South Wing, 1st Floor
+- **Phone:** (555) 010-1400
+- **Hours:** Mon–Fri 8:00 AM – 6:00 PM, Sat 9:00 AM – 1:00 PM
+- **Referral required:** No for self-pay; some insurance plans require one.
+
+### 5.2 Medical Dermatology Conditions
+- Acne
+- Eczema (atopic dermatitis)
+- Psoriasis
+- Rosacea
+- Hives and allergic skin reactions
+- Fungal and bacterial skin infections
+- Warts
+- Hair loss (alopecia)
+- Nail disorders
+- Vitiligo
+
+### 5.3 Skin Cancer Services
+- Full-body skin cancer screening
+- Mole mapping and dermoscopy
+- Skin biopsy
+- Mohs micrographic surgery (for basal and squamous cell carcinoma)
+- Melanoma treatment coordination with Oncology
+
+> **Recommendation:** Adults over 40, or anyone with a family history of skin cancer, should have an annual skin exam. Follow the ABCDE rule for moles: Asymmetry, Border irregularity, Color variation, Diameter over 6 mm, Evolving shape or size.
+
+### 5.4 Cosmetic Dermatology
+- Chemical peels
+- Laser hair removal
+- Laser resurfacing and scar treatment
+- Botox and dermal fillers
+- Microneedling
+- Tattoo removal
+- Medical-grade skin care consultation
+
+### 5.5 Dermatologists (Fictional)
+
+| Doctor | Focus |
+|---|---|
+| Dr. Sofia Bennett, MD, FAAD | General and pediatric dermatology |
+| Dr. Kevin Tran, MD, FAAD | Skin cancer and Mohs surgery |
+| Dr. Aisha Rahman, MD | Cosmetic and laser dermatology |
+
+### 5.6 Pricing (Self-Pay Estimates)
+- New patient visit: $200
+- Follow-up visit: $120
+- Full-body skin exam: $175
+- Skin biopsy: $250 – $400
+- Chemical peel: $150 – $300
+- Botox: $12 per unit
+- Laser hair removal: from $100 per session
+
+> Cosmetic procedures are usually **not covered** by insurance. Medical conditions such as acne, eczema, psoriasis, and skin cancer are usually covered.
+
+---
+
+## 6. Other Departments and Specialties
+
+| Department | Location | Phone |
+|---|---|---|
+| Orthopedics and Sports Medicine | West Wing, 2nd Floor | (555) 010-1500 |
+| Neurology and Stroke Center | East Tower, 4th Floor | (555) 010-1600 |
+| Oncology and Cancer Center | South Wing, 3rd Floor | (555) 010-1700 |
+| Pediatrics | North Wing, 2nd Floor | (555) 010-1800 |
+| Obstetrics and Gynecology (Women's Health) | North Wing, 3rd Floor | (555) 010-1900 |
+| Gastroenterology | East Tower, 2nd Floor | (555) 010-2000 |
+| Pulmonology | East Tower, 5th Floor | (555) 010-2100 |
+| Endocrinology and Diabetes Care | South Wing, 2nd Floor | (555) 010-2200 |
+| Psychiatry and Behavioral Health | Annex Building | (555) 010-2300 |
+| Physical Therapy and Rehabilitation | West Wing, 1st Floor | (555) 010-2400 |
+| Ophthalmology (Eye Care) | South Wing, 1st Floor | (555) 010-2500 |
+| Radiology and Imaging | Main Building, Basement | (555) 010-2600 |
+
+### 6.1 Ophthalmology (Eye Care)
+
+The Ophthalmology department provides routine and urgent eye care.
+
+- **Location:** South Wing, 1st Floor
+- **Department phone:** (555) 010-2500
+- **Hours:** Mon–Fri 8:00 AM – 6:00 PM
+- **Referral required:** No for self-pay patients; some insurance plans require one.
+- **Direct doctor phone numbers:** Not listed. Call the department phone to reach the eye-care team or request an appointment.
+
+| Doctor | Focus | Clinic Days |
+|---|---|---|
+| Dr. Elena Park, MD | General ophthalmology, cornea, and eye trauma follow-up | Mon, Wed, Fri |
+| Dr. Ravi Shah, MD | Retina and diabetic eye disease | Tue, Thu |
+| Dr. Grace Liu, MD | Pediatric ophthalmology | Mon, Thu |
+
+For a chemical eye exposure, penetrating eye injury, sudden vision loss, severe eye bleeding, or major facial/eye trauma, use the Emergency Department at North Wing, Ground Floor, Entrance C, or call 911. The Emergency Department is open 24/7 and can contact the on-call ophthalmologist. For an injury that does not appear severe, call Ophthalmology at (555) 010-2500 for routing instructions; the documents do not provide a diagnosis or individualized treatment advice.
+
+---
+
+## 7. Appointments
+
+- **Online booking:** Patient portal at portal.evergreen-demo-hospital.example
+- **By phone:** (555) 010-1010, Mon–Fri 7:30 AM – 6:00 PM
+- **Walk-ins:** Accepted at Urgent Care and Fast Track only.
+- **New patient arrival:** Come 20 minutes early with photo ID, insurance card, and medication list.
+- **Cancellation policy:** Please cancel at least 24 hours in advance. A $25 no-show fee may apply.
+- **Telehealth:** Video visits available for follow-ups in cardiology, dermatology, endocrinology, and psychiatry. Book through the portal.
+- **Average wait for new specialist appointment:** Cardiology 5 days, Dermatology 10 days, Chiropractic 2 days.
+
+---
+
+## 8. Insurance and Billing
+
+### 8.1 Accepted Insurance (Fictional)
+- Medicare and Medicaid
+- Blue Cross Blue Shield (all plans)
+- Aetna
+- Cigna
+- UnitedHealthcare
+- Humana
+- TRICARE (military)
+- Most major employer-sponsored plans
+
+### 8.2 Billing Information
+- Billing office: (555) 010-1050, Mon–Fri 8:00 AM – 5:00 PM
+- Payment methods: credit/debit card, HSA/FSA card, check, online portal
+- Payment plans: interest-free plans up to 12 months for balances over $500
+- Financial assistance: A charity care program offers discounts of 25%–100% for patients under 400% of the Federal Poverty Level. Apply through the Financial Counseling office, Main Building, Room 105.
+- Self-pay discount: 20% off if paid in full within 30 days.
+- No Surprises Act: Patients receive a Good Faith Estimate for scheduled services upon request.
+
+---
+
+## 9. Patient and Visitor Information
+
+### 9.1 Visiting Rules
+- Visitors must sign in at the front desk and wear a visitor badge.
+- Children under 12 must be accompanied by an adult.
+- Visitors with fever, cough, or contagious symptoms should not visit.
+- Flowers are not allowed in ICU or oncology units.
+
+### 9.2 Parking and Transportation
+- Main parking garage at Entrance A: $5 per day. Free for the first 30 minutes.
+- Emergency parking at Entrance C is free for 2 hours.
+- Valet service available 7:00 AM – 7:00 PM at the main entrance ($8).
+- Free shuttle from Springfield Transit Station every 20 minutes, 6:00 AM – 9:00 PM.
+- Wheelchair assistance available at all entrances.
+
+### 9.3 Amenities
+- Cafeteria and coffee shop
+- Gift shop (Main Lobby)
+- Free Wi-Fi: network "ECMC-Guest"
+- Chapel and meditation room (open 24/7)
+- ATM in the Main Lobby
+- Language interpreter services in 40+ languages, free of charge
+
+### 9.4 Medical Records
+- Request through the patient portal or the Medical Records office, (555) 010-1060.
+- Records are typically available within 5 business days.
+- A signed authorization form and photo ID are required.
+
+### 9.5 Pharmacy
+- Located in the Main Lobby.
+- Offers prescription refills, over-the-counter items, and free home delivery within 10 miles for orders over $30.
+
+---
+
+## 10. Frequently Asked Questions
+
+**Q: Is the emergency room open on holidays?**
+A: Yes. The Emergency Department is open 24 hours a day, 7 days a week, every day of the year, including holidays.
+
+**Q: Do I need a referral to see a cardiologist?**
+A: Not for self-pay patients. Some insurance plans (such as HMOs) require a referral, so please check with your insurer.
+
+**Q: Which department treats back pain?**
+A: Back pain can be treated by the Spine & Chiropractic Center for conservative care and by Orthopedics if surgery may be needed.
+
+**Q: Can I get a skin cancer check without an appointment?**
+A: No. Skin cancer screenings require an appointment. Call (555) 010-1400 or book via the patient portal.
+
+**Q: Does insurance cover chiropractic care?**
+A: Many plans cover a limited number of visits per year. Medicare covers spinal manipulation for certain conditions. Contact your insurer to verify.
+
+**Q: What should I bring to the emergency room?**
+A: Photo ID, insurance card, a list of medications and allergies, and your emergency contact information. If you do not have these, you will still be treated.
+
+**Q: Does the hospital offer telehealth?**
+A: Yes, for follow-up visits in cardiology, dermatology, endocrinology, and psychiatry.
+
+**Q: Where do I park for the emergency department?**
+A: Use Entrance C. Parking is free for the first 2 hours.
+
+**Q: How do I request my medical records?**
+A: Use the patient portal or call (555) 010-1060. A signed authorization and photo ID are required.
+
+**Q: Are cosmetic dermatology procedures covered by insurance?**
+A: Generally no. Medically necessary treatments (acne, eczema, psoriasis, skin cancer) are typically covered.
+
+**Q: What is the difference between Urgent Care and the Emergency Room?**
+A: Urgent Care handles non-life-threatening problems like colds, minor cuts, and sprains. The ER is for life-threatening or severe conditions such as chest pain, stroke, or major injuries.
+
+**Q: Is there financial help for patients who cannot afford care?**
+A: Yes. The charity care program offers 25%–100% discounts based on income. Visit Financial Counseling in Main Building, Room 105.
+
+---
